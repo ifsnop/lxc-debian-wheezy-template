@@ -1,6 +1,12 @@
 LXC template lxc-debian-wheezy-template
 =======================================
 
+# WTF?
+This is a modified version of simonvanderveldt/lxc-debian-wheezy-template
+
+Don't blame simonvanderveldt, this is for a custom server project I'm working in.
+
+
 # Why
 Since the lxc template for Debian in Debian Wheezy is broken (because it relies on live-debconfig which isn't available in Wheezy) I started looking for a solution.
 
