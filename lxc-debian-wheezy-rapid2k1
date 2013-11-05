@@ -237,6 +237,8 @@ lxc.cgroup.devices.allow = c 136:* rwm
 lxc.cgroup.devices.allow = c 5:2 rwm
 # enable access to rtc
 lxc.cgroup.devices.allow = c 254:0 rwm
+# tun
+lxc.cgroup.devices.allow = c 10:200 rwm
 
 # disable kernel loading modules, mac changes on interfaces
 lxc.cap.drop = sys_module mac_admin mac_override
