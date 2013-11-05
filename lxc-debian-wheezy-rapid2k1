@@ -241,7 +241,17 @@ lxc.cgroup.devices.allow = c 254:0 rwm
 lxc.cgroup.devices.allow = c 10:200 rwm
 
 # disable kernel loading modules, mac changes on interfaces
-lxc.cap.drop = sys_module mac_admin mac_override
+lxc.cap.drop = sys_module
+lxc.cap.drop = sys_time
+lxc.cap.drop = sys_rawio
+lxc.cap.drop = sys_admin
+lxc.cap.drop = setpcap
+lxc.cap.drop = mknod
+lxc.cap.drop = mac_admin
+lxc.cap.drop = mac_override
+
+# in case IP addresses etc. must not be changed:
+# lxc.cap.drop = net_admin
 
 # ensure not remounting ro the root partition ??
 lxc.mount.entry=/mnt $rootfs/mnt none bind 0 0
