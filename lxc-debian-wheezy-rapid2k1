@@ -24,6 +24,10 @@
 # This is a slightly modified version by Rob van der Hoeven
 # I use it for my FreedomBox project: http://freedomboxblog.nl
 # ==============================================================
+# ==============================================================
+# This is a slightly remodified version by Diego Torres
+# <diego dot torres at gmail dot com>
+# ==============================================================
 
 configure_debian()
 {
