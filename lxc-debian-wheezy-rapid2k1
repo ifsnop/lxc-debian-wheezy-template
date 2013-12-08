@@ -260,8 +260,9 @@ lxc.cap.drop = mac_override
 # ensure not remounting ro the root partition ??
 lxc.mount.entry=/mnt $rootfs/mnt none bind 0 0
 
-# mounts point
-lxc.mount.entry=proc $rootfs/proc proc nodev,noexec,nosuid 0 0
+# mount points
+# uncomment to share proc between guest and host
+# lxc.mount.entry=proc $rootfs/proc proc nodev,noexec,nosuid 0 0
 lxc.mount.entry=devpts $rootfs/dev/pts devpts defaults 0 0
 lxc.mount.entry=sysfs $rootfs/sys sysfs defaults  0 0
 
